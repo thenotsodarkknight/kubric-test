@@ -71,7 +71,7 @@ def predict_price(area) -> float:
     y_train = (y_train - mn_p)/(mx_p - mn_p)
     w = 1
     b = 1
-    f = 1e-6
+    f = 1e-5
     grad_w = 1
     grad_b = 1
     while abs(grad_w)+abs(grad_b) > 1e-4:
